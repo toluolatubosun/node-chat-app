@@ -2,7 +2,9 @@
 A small chat app made with node JS. It has private and public chat rooms
 
 ```
+
 npm install
+
 npm start
 
 ```
@@ -18,3 +20,6 @@ npm start
 > User connects or disconnects message
 
 > Active users
+
+## Live on heroku
+https://chatty-appy.herokuapp.com/
