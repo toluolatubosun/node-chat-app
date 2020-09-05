@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles.css">
+
+    <script>
+        const chatId = "<%= chatId %>";
+        const userId = "<%= userId %>";
+    </script>
+    <script src="/socket.io/socket.io.js" defer></script>
+    <script src="/chat.js" defer></script>
+</head>
+<body>
+    <div id="myChat">
+        <% if ( public ){ %> 
+            <h1>Public Chat</h1>
+            <h2>This is a public chat please be nice... <a href="/private">Go to private</a></h2>
+        <% }else{ %> 
+            <h1>Private Chat</h1>
+            <h2>Share this URL to connect with your friends... <a href="/public">Go to public</a></h2>
+        <% } %> 
+
+        <div id="chat-window">
+            <div id="output"></div>
+            <div id="feedback"></div>
+        </div>
+
+        <input type="text" placeholder="Handle" id="handle">
+        <input type="text" placeholder="Message" id="message">
+
+        <button id="send">Send</button>
+    </div>
+
+    <div id="online">
+        <h1 id="online-title">Online <span id="online-count">0</span></h1>
+    </div>
+
+    <footer>
+        <a href="https://github.com/toluolatubosun/World-Time.git" target="_blank"><p>GitHub: @toluolatubosun</p></a>
+    </footer>
+
+    <div class="clearfix"></div>
+
+</body>
+</html>

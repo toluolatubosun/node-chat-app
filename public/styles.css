@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@1&display=swap');
+body{
+    font-family: 'Nunito';
+}
+
+h2{
+    font-size: 18px;
+    padding: 10px 20px;
+    color: #367abe;
+}
+
+h1{
+    font-size: 35px;
+    padding: 1px 20px;
+    color: #367abe;
+}
+
+#online{
+    max-width: 1000px;
+    margin: 30px auto;
+    border: 1px solid #ddd;
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.05);
+    border-radius: 2px;
+}
+
+#online-title{
+    color: green;
+}
+
+.online-user{
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+#myChat{
+    max-width: 1000px;
+    margin: 30px auto;
+    border: 1px solid #ddd;
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.05);
+    border-radius: 2px;
+}
+
+#chat-window{
+    height: 400px;
+    overflow: auto;
+    background: #eee;
+}
+
+#output p{
+    padding: 14px 0px;
+    margin: 0 20px;
+    border-bottom: 1px solid #e9e9e9;
+    color: #555;
+}
+
+#feedback p{
+    color: #aaa;
+    padding: 14px 0px;
+    margin: 0 20px;
+}
+
+#output strong{
+    color: #367abe;
+}
+
+label{
+    box-sizing: border-box;
+    display: block;
+    padding: 10px 20px;
+}
+
+input{
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background: #eee;
+    border: 0;
+    display: block;
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    font-family: Nunito;
+    font-size: 16px;
+}
+
+button{
+    background: #367abe;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    padding: 12px 0;
+    width: 100%;
+    border-radius: 0 0 2px 2px;
+}
+
+  
+footer p{
+    font-size: 25px;
+    text-align: center;
+}
+
+a {
+    color: #039be5;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+@media only screen and (min-width: 800px) {
+    #myChat{
+        width:65%;
+        margin-right:3% !important;
+        float: left;
+    }
+    
+    #online {
+        width:30%;
+        float: left;
+    }
+    
+    .clearfix{
+        clear:both;
+    }
+}
